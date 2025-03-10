@@ -4,10 +4,10 @@
   gather_facts: false
 
   vars:
-    namespace:
+    namespace: aac-poc
     labels:
       - app: aap-poc
-    vm_name:
+    vm_name: ansible-deployed
 
 
   tasks:
