@@ -45,12 +45,11 @@
         instancetype:
           name: u1.medium
         preference:
-          name: fedora
+          name: ansible-deployed
         spec:
           domain:
             devices:
               interfaces:
-                - name: nic-mgmt
-                  bridge: {}
+                - name: default
                   model: virtio
       delegate_to: localhost
