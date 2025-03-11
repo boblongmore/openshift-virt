@@ -24,7 +24,7 @@
     - name: Create Namespace
       redhat.openshift.k8s:
         host: "{{ cluster_url }}"
-        api_key: "{{ openshift_auth_results.openshift_auth.api_key  }}"
+        # api_key: "{{ openshift_auth_results.openshift_auth.api_key  }}"
         name: "{{ namespace }}"
         api_version: v1
         kind: Namespace
@@ -35,7 +35,7 @@
     - name: Create an Openshift VM
       redhat.openshift_virtualization.kubevirt_vm:
         host: "{{ cluster_url }}"
-        api_key: "{{ openshift_auth_results.openshift_auth.api_key  }}"
+        # api_key: "{{ openshift_auth_results.openshift_auth.api_key  }}"
         validate_certs: false
         state: "{{ vm_state | default('present') }}"
         name: "{{ vm_name }}"
