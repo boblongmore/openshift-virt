@@ -5,8 +5,6 @@
 
   vars:
     namespace: aac-poc
-    labels:
-      app: aap-poc
     vm_name: ansible-deployed
 
 
