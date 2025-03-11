@@ -46,10 +46,10 @@
           name: u1.medium
         preference:
           name: fedora
-        spec:
-          domain:
-            devices:
-              interfaces:
-                - name: default
-                  masquerade: {}
+        # spec:
+        #   domain:
+        #     devices:
+        #       interfaces:
+        #         - name: default
+        #           masquerade: {}
       # delegate_to: localhost
