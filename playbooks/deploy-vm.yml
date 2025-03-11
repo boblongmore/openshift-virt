@@ -44,10 +44,12 @@
           app: dadjoke
         instancetype:
           name: u1.medium
+        preference:
+          name: fedora
         spec:
           domain:
             devices:
               interfaces:
                 - name: default
-                  model: virtio
+                  masquerade: {}
       delegate_to: localhost
