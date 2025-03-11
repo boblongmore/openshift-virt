@@ -22,7 +22,7 @@
     #   delegate_to: localhost
 
     - name: Create Namespace
-      redhat.openshift.k8s:
+      kubernetes.core.k8s:
         # host: "{{ cluster_url }}"
         # api_key: "{{ openshift_auth_results.openshift_auth.api_key  }}"
         name: "{{ namespace }}"
